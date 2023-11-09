@@ -1,0 +1,271 @@
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  opacity: 0.6;
+  transition: 0.3s;
+  background: transparent;
+  border: 1px solid $--color-white;
+  cursor: pointer;
+  margin: 0 5px!important;
+  z-index: 1;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.swiper-pagination-bullet-active {
+
+  background: $--color-white;
+  border-color: $--color-white;
+  opacity: 1;
+}
+
+.swiper-button-next, .swiper-button-prev {
+  border: 1px solid rgba(30, 26, 47, 1);
+  height: 54px;
+  display: flex;
+  max-width: 72px;
+  width: 100%;
+  border-radius: 30px;
+  transition: 0.3s;
+  z-index: 1;
+
+  svg {
+    width: 24px;
+    height: 24px;
+
+    path {
+      fill: $--color-default;
+      transition: 0.3s;
+    }
+  }
+
+  &:hover {
+    background-color: $--color-default;
+
+    svg path {
+      fill: $--color-white;
+    }
+  }
+}
+
+.swiper-pagination-fraction {
+  color: $--color-default;
+  font-family: "Playfair Display";
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 53px;
+  z-index: 0;
+  span {
+    color: inherit;
+    font-family: inherit;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 53px;
+  }
+}
+
+.events-slider {
+  max-width: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+
+.slider-header {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 60px;
+
+  .swiper-button-next, .swiper-button-prev {
+    top: 22px;
+  }
+
+  .swiper-button-prev {
+    right: 8%;
+    left: unset;
+  }
+
+  .swiper-pagination-fraction {
+    top: -5px;
+    max-width: 15%;
+    right: 17%;
+    left: unset;
+  }
+}
+
+.slider-wrapper {
+  max-width: 100%;
+  overflow: hidden;
+  padding: 0 35px;
+  position: relative;
+  width: 100%;
+
+  .swiper-button-next, .swiper-button-prev {
+    top: 52%;
+  }
+
+  .swiper-button-next {
+    right: 0;
+  }
+  .swiper-button-prev {
+    left: 0;
+  }
+}
+
+.affairs-slider {
+  max-width: 100%;
+  overflow: hidden;
+  padding-bottom: 10px;
+
+  .swiper-wrapper {
+    align-items: stretch;
+
+    .swiper-slide {
+      height: auto;
+    }
+  }
+}
+
+.events-slider-second {
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 520px;
+  width: 100%;
+}
+
+.staff-slider {
+  max-width: 100%;
+  width: 100%;
+  overflow: hidden;
+  padding-bottom: 10px;
+  position: relative;
+  &:before {
+    content: "";
+    display: block;
+    width: 1000px;
+    height: 500px;
+    background-color: $--color-white;
+    position: absolute;
+    left: -1000px;
+    top: 0;
+    z-index: 2;
+  }
+  .swiper-wrapper {
+    align-items: stretch;
+
+    .swiper-slide {
+      height: auto;
+    }
+  }
+}
+
+.slider-gallery {
+  max-width: 100%;
+  position: relative;
+  overflow: hidden;
+
+  img {
+    height: 530px;
+    object-fit: cover;
+    max-width: 100%;
+    width: 100%;
+    border-radius: 30px;
+  }
+}
+
+
+@media (max-width: 1024px) {
+
+  .events-slider-second {
+    max-height: 1370px;
+  }
+
+  .slider-wrapper {
+    padding: 0;
+    overflow: initial;
+  }
+  .affairs-slider {
+    overflow: initial;
+
+    &:before {
+      content: "";
+      display: block;
+      width: 1000px;
+      height: 600px;
+      background-color: $--color-white;
+      position: absolute;
+      left: -1000px;
+      top: -1px;
+      z-index: 2;
+    }
+  }
+  .events-slider {
+    overflow: initial;
+    position: relative;
+
+    &:before {
+      content: "";
+      display: block;
+      width: 1000px;
+      height: 500px;
+      background-color: $--color-white;
+      position: absolute;
+      left: -1000px;
+      top: 0;
+      z-index: 2;
+    }
+  }
+  .programs-slider {
+    overflow: initial;
+    position: relative;
+  }
+  .slider-header {
+    margin-bottom: 50px;
+  }
+  .slider-gallery {
+    position: relative;
+    width: 100%;
+    max-width: initial;
+    margin-bottom: 50px;
+
+    img {
+      height: 590px;
+    }
+  }
+  .staff-slider {
+    overflow: initial;
+    padding-bottom: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .events-slider-second {
+    max-height: 670px;
+  }
+  .slider-header {
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+    position: initial;
+  }
+  .events-slider:before {
+    display: none;
+  }
+  .slider-gallery {
+    left: -20px;
+    width: calc(100% + 40px);
+    margin-bottom: 45px;
+    img {
+      height: 408px;
+    }
+  }
+  .affairs-slider:before {
+    display: none;
+  }
+
+}

@@ -1,0 +1,384 @@
+.home-main-banner {
+  max-width: 100%;
+  margin: 10px 10px 30px;
+
+  .container-wide {
+    overflow: hidden;
+    position: relative;
+  }
+}
+.home-banner-slider {
+  max-width: 100%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+
+  .swiper-pagination {
+    bottom: 22px;
+  }
+
+  .slide-content {
+    padding: 140px 50px 90px;
+    height: calc(100vh - 20px);
+    max-width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 30px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+
+    .slide-content-wrapper {
+      z-index: 1;
+      position: relative;
+      max-width: 1152px;
+      padding: 0 15px;
+      margin: 0 auto;
+      width: 100%;
+
+      &:before {
+        content: "";
+        display: block;
+        width: 166px;
+        height: 37px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        background-image: url(../img/year-ico.svg);
+        z-index: 1;
+        margin-bottom: 10px;
+      }
+    }
+
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0.14) 0%, rgba(20, 20, 20, 0.85) 100%);
+      top: 0;
+      left: 0;
+      border-radius: 30px;
+    }
+
+    .slide-content-title {
+      color: #FCFCFC;
+      font-family: $--font-second;
+      font-size: 70px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 78px;
+      letter-spacing: 0.7px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+    .slide-content-subtitle {
+      color: #FCFCFC;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 23px;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.achievements-section {
+  margin:0 10px 125px;
+  border-radius: 30px;
+  background-color: #CAACE5;
+  padding: 50px 50px 50px;
+  background-image: url(../img/background-decor.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+  position: relative;
+  overflow: hidden;
+
+  .achievements-section-wrapper {
+    position: relative;
+    max-width: 100%;
+
+    .swiper-button-next, .swiper-button-prev {
+      top: unset;
+      right: unset;
+      bottom: 0;
+    }
+
+    .swiper-button-next {
+      left: 90px;
+    }
+
+    .swiper-button-prev {
+      left: 0;
+    }
+
+    .swiper-pagination {
+      bottom: 0;
+      display: flex;
+      padding-left: 265px;
+      height: 54px;
+      align-items: center;
+      padding-bottom: 10px;
+    }
+
+    .achievements-content {
+      padding-top: 22px;
+
+      .h3 {
+        margin-bottom: 14px;
+      }
+      .achievements-description {
+
+        p {
+          max-width: 70%;
+          font-weight: 500;
+        }
+      }
+    }
+
+    .achievements-slider {
+      max-width: 100%;
+      overflow: hidden;
+
+      .achievement-slide-content {
+        border-radius: 20px 20px 20px 20px;
+        background: rgba(255, 255, 255, 0.30);
+        backdrop-filter: blur(6px);
+        padding-bottom: 20px;
+
+        .achievement-slide-image {
+          margin-bottom: 15px;
+
+          img {
+            border-radius: 20px 20px 0 0;
+            width: 100%;
+            height: 254px;
+            object-fit: cover;
+          }
+        }
+        .achievement-slide-title {
+          padding: 0 22px;
+          margin-bottom: 2px;
+        }
+        .achievement-slide-description {
+          padding: 0 22px;
+
+          p {
+
+          }
+        }
+      }
+    }
+  }
+}
+
+.programs-section {
+
+  .slider-header .swiper-button-next, .slider-header .swiper-button-prev {
+    top: 48px;
+  }
+  .slider-header .swiper-pagination-fraction {
+    top: 20px;
+  }
+}
+
+.reminder-section {
+  margin-bottom: 120px;
+
+  .btn-more {
+    margin-top: 20px;
+  }
+
+  .btn-bordered {
+    margin-top: 20px;
+  }
+
+  .col-lg-3 {
+    margin-bottom: 20px;
+  }
+
+  .h3 {
+    margin-bottom: 60px;
+    text-align: center;
+    width: 100%;
+  }
+  .reminder-image {
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #D7D7D7;
+    background: $--color-white;
+    display: flex;
+    img {
+      width: 100%;
+      height: 177px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  .achievements-section .achievements-section-wrapper .swiper-pagination {
+    padding-left: 0;
+    left: 43%;
+  }
+  .achievements-section .achievements-section-wrapper .swiper-button-prev {
+    left: calc(31% - 30px);
+  }
+  .achievements-section .achievements-section-wrapper .swiper-button-next {
+    right: calc(31% - 30px);
+  }
+}
+
+@media (max-width: 1024px) {
+  .home-banner-slider {
+    .slide-content {
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+
+      .slide-content-wrapper {
+
+        &:before {
+          margin: 0 auto 25px;
+          background-image: url(../img/year-ico-tablet.svg);
+          width: 237px;
+        }
+      }
+
+    }
+  }
+  .achievements-section {
+    padding: 50px 50px 135px;
+    background-image: url(../img/achieve-back-tablet.png);
+    background-position: 0% 100%;
+
+    .achievements-section-wrapper {
+      .swiper-pagination {
+        bottom: -96px;
+      }
+      .swiper-button-next, .swiper-button-prev {
+        bottom: -96px;
+      }
+      .swiper-button-prev {
+        left: 30%;
+      }
+      .swiper-button-next {
+        right: 30%;
+        left: unset;
+      }
+      .achievements-content {
+        margin-bottom: 45px;
+
+        .h3 {
+          width: 100%;
+          text-align: center;
+          br {
+            display: none;
+          }
+        }
+        .achievement-slide-content .achievement-slide-title {
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 22px;
+        }
+
+        .achievements-description {
+          p {
+            text-align: center;
+            margin: 0 auto;
+            font-size: 12px;
+            line-height: 18px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+
+  .home-main-banner {
+    margin: 10px 6px 20px;
+  }
+  .home-banner-slider {
+
+    .slide-content {
+      padding: 0 20px;
+
+      &:after {
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.14) 21.8%, rgba(20, 20, 20, 0.85) 100%);
+      }
+      .slide-content-title {
+        font-size: 52px;
+        line-height: 52px;
+      }
+      .slide-content-subtitle {
+        font-size: 16px;
+        line-height: 18px;
+      }
+      .slide-content-wrapper {
+        padding: 0;
+        &:before {
+          margin: 0 auto 25px;
+        }
+      }
+    }
+  }
+
+  .achievements-section {
+    margin: 0 6px 90px;
+    padding: 44px 0 100px;
+
+    .achievements-section-wrapper {
+
+      .swiper-button-prev {
+        left: 0;
+        bottom: -77px;
+      }
+      .swiper-button-next {
+        right: 0;
+        bottom: -77px;
+      }
+      .swiper-pagination {
+        justify-content: center;
+        padding-left: 0;
+        bottom: -77px;
+
+      }
+      .achievements-content {
+        .h3 {
+          font-size: 46px;
+        }
+        .achievements-description {
+          p {
+            max-width: 100%;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+
+  .reminder-section {
+    .h3 {
+      margin-bottom: 30px;
+    }
+    .col-lg-3 {
+      margin-bottom: 14px;
+    }
+    .reminder-image img {
+      height: 208px;
+      object-fit: contain;
+    }
+    .btn-more {
+      margin-top: 12px;
+    }
+  }
+
+}

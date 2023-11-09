@@ -1,0 +1,48 @@
+.main-menu {
+  display: flex;
+  align-items: center;
+  margin: 0;
+
+  li {
+
+    a {
+      color: $--color-default;
+      font-size: 13px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      letter-spacing: 0.26px;
+      text-transform: uppercase;
+
+      &:hover {
+        color: $--color-hover;
+        text-shadow: 0px 0 0 rgba(30,26,47,.2705882353);
+      }
+    }
+  }
+
+  li + li {
+    margin-left: 28px;
+  }
+}
+
+
+@keyframes rotateAnim {
+  0% {
+    transform: rotate(0);
+  }
+
+  25% {
+    transform: rotate(90deg);
+  }
+
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

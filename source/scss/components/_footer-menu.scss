@@ -1,0 +1,11 @@
+.footer-nav {
+
+  ul {
+
+    li {
+      &:not(:last-of-type) {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}

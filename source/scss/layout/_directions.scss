@@ -1,0 +1,55 @@
+.direction-content-wrapper {
+  background-color: #CAACE5;
+  background-image: url(../img/direction-page-img.png);
+  height: 348px;
+  background-position: 100% 310%;
+}
+
+
+.direction-affairs-section {
+  margin-bottom: 90px;
+
+  .filters-wrapper {
+    margin-bottom: 60px;
+  }
+
+  .row {
+
+    .col-lg-4 {
+      margin-bottom: 30px;
+    }
+  }
+
+}
+
+@media (max-width: 1024px) {
+  .direction-content-wrapper {
+    height: 580px;
+    background-position: 50% 100%;
+  }
+  .direction-affairs-section .filters-wrapper {
+    justify-content: flex-end;
+    margin-bottom: 50px;
+  }
+  .direction-affairs-section .row .col-lg-4 {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .direction-content-wrapper {
+    height: 400px;
+    background-size: 315px;
+    background-position: 50% 100%;
+
+    .content-wrapper-header {
+      padding-top: 120px;
+    }
+  }
+  .direction-affairs-section .filters-wrapper {
+    margin-bottom: 30px;
+  }
+  .direction-affairs-section .row .col-lg-4 {
+    margin-bottom: 25px;
+  }
+}

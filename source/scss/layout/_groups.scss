@@ -1,0 +1,23 @@
+.groups-content-wrapper {
+  background-image: url(../img/groups-page-img.png);
+  background-color: #CAACE5;
+  height: 348px;
+}
+
+
+@media (max-width: 1024px) {
+  .groups-content-wrapper {
+    height: 580px;
+    background-image: url(../img/groups-back-img.png);
+    background-position: 50% 100%;
+
+  }
+}
+
+@media (max-width: 600px) {
+  .groups-content-wrapper {
+    height: 400px;
+    background-image: url(../img/groups-back-mobile.png);
+    background-position: 50% 100%;
+  }
+}

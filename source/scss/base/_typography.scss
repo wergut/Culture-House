@@ -1,0 +1,87 @@
+body {
+  font-family: $--font-default;
+}
+
+h1, .h1 {
+  font-family: $--font-second;
+}
+h2 ,.h2 {
+  font-family: $--font-second;
+  color: $--color-default;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 67px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+}
+h3, .h3 {
+  font-family: $--font-second;
+  color: $--color-default;
+  font-size: 46px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 52px;
+  text-transform: uppercase;
+}
+h4 .h4 {
+  font-family: $--font-second;
+}
+h5, .h5 {
+  font-family: $--font-second;
+}
+h6, .h6 {
+  font-family: $--font-second;
+}
+
+a {
+  font-family: $--font-default;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+p {
+  font-family: $--font-default;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0.28px;
+  color: $--color-default;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+  li {
+    font-family: $--font-default;
+  }
+}
+
+
+.title-card {
+  color: $--color-default;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26px;
+  letter-spacing: 0.34px;
+  text-transform: uppercase;
+  margin-bottom: 26px;
+  max-width: 70%;
+}
+
+@media (max-width: 600px) {
+  p {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  h2, .h2 {
+    font-size: 44px;
+    line-height: 49px;
+  }
+  h3, .h3 {
+    font-size: 38px;
+    line-height: 42px;
+  }
+}

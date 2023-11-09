@@ -1,0 +1,106 @@
+.datepicker-input {
+  border-radius: 100px;
+  border: 1px solid #1e1a2f66;
+  outline: none;
+  padding: 16px 24px;
+  height: 56px;
+  width: 156px;
+  cursor: pointer;
+  position: relative;
+  transition: 0.3s;
+}
+.datepicker-input:hover {
+  border-color: #1E1A2F;
+}
+.datepicker-cell.range {
+  background: #594c941a;
+}
+.datepicker-cell.range-end:not(.selected), .datepicker-cell.range-start:not(.selected) {
+  background: #594C94;
+}
+.datepicker-grid span {
+  color: #1E1A2F;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.datepicker .days-of-week span {
+  color: #1E1A2F;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.datepicker-cell.selected, .datepicker-cell.selected:hover {
+  background: #594C94;
+}
+.wrapper-calendar .input-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.wrapper-calendar .input-item:nth-of-type(2) {
+  margin-left: 20px;
+}
+.wrapper-calendar .input-item:after {
+  content: "";
+  display: block;
+  width: 11px;
+  height: 11px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-image: url(/wp-content/themes/mws/img/icons/arrow-dropdown.svg);
+  transition: .3s;
+  position: absolute;
+  right: 24px;
+}
+.datepicker-header {
+  padding-bottom: 20px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #E9E9E9;
+}
+.datepicker-header .datepicker-controls {
+  padding: 0 20px;
+}
+.datepicker-main {
+  padding: 0 20px;
+}
+.datepicker-dropdown .datepicker-picker {
+  border-radius: 20px;
+  border: 1px solid #E9E9E9;
+  background: #FFF;
+  box-shadow: 0px 2px 24px 0px rgba(1, 1, 1, 0.16);
+  padding: 20px 0 26px;
+}
+.datepicker .days-of-week {
+  padding-bottom: 10px;
+}
+.datepicker-header .datepicker-controls .button:hover {
+  background: transparent;
+}
+.datepicker-header .datepicker-controls .button {
+  background: transparent;
+  color: #1E1A2F;
+  text-align: center;
+  font-family: Manrope;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.datepicker-header .datepicker-controls .button svg path {
+  transition: 0.3s;
+}
+.datepicker-header .datepicker-controls .button:hover svg path {
+  stroke: #7E6FC5;
+}
+.datepicker-cell:not(.day) {
+  height: 63px;
+}
+.datepicker-cell.focused:not(.selected) {
+  background: #594C94;
+  color: #fff;
+}
