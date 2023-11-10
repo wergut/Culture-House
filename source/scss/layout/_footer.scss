@@ -52,7 +52,7 @@
       font-size: 12px;
       font-style: normal;
       font-weight: 500;
-      line-height: 19px;
+      line-height: 156%;
       letter-spacing: 0.24px;
     }
   }
@@ -62,7 +62,7 @@
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
-    line-height: 22px;
+    line-height: 160%;
     letter-spacing: 0.28px;
   }
 
@@ -89,7 +89,7 @@
         font-size: 14px;
         font-style: normal;
         font-weight: 500;
-        line-height: 18px;
+        line-height: 130%;
         text-transform: uppercase;
         margin-top: 10px;
       }
@@ -160,7 +160,6 @@
       font-size: 16px;
       line-height: normal;
       margin-bottom: 14px;
-
     }
 
     .footer-information {
@@ -223,7 +222,7 @@
     .col-m-12:nth-of-type(4) {
       margin-bottom: 40px;
       .footer-contacts {
-        padding-bottom: 40px;
+        padding-bottom: 20px;
         border-bottom: 1px solid rgba(255, 255, 255, 0.10);
       }
     }

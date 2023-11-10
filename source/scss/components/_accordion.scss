@@ -22,7 +22,7 @@
   font-size: 17px;
   font-style: normal;
   font-weight: 500;
-  line-height: 26px;
+  line-height: 150%;
   text-transform: uppercase;
   cursor: pointer;
   display: flex;
@@ -86,7 +86,7 @@
     font-size: 13px;
     font-style: normal;
     font-weight: 600;
-    line-height: 18px;
+    line-height: 140%;
     text-align: start;
     letter-spacing: 0.26px;
     vertical-align: top;
@@ -98,7 +98,7 @@
     font-size: 13px;
     font-style: normal;
     font-weight: 400;
-    line-height: 18px;
+    line-height: 140%;
     text-align: start;
     letter-spacing: 0.26px;
     border-bottom: 1px solid rgba(30, 26, 47, 0.10);
@@ -123,7 +123,6 @@
 
     .accordion-item-header {
       font-size: 15px;
-      line-height: 23px;
     }
 
     .accordion-item {
@@ -145,7 +144,7 @@
 
     .accordion-item-header {
       font-size: 14px;
-      line-height: 18px;
+      line-height: 146%;
       padding: 15px 20px;
 
       &:after {

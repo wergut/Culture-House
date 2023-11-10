@@ -40,7 +40,7 @@ body::-webkit-scrollbar-thumb {
     font-size: 12px;
     font-style: normal;
     font-weight: 600;
-    line-height: 18px;
+    line-height: 146%;
     letter-spacing: 0.24px;
     text-transform: uppercase;
     background: #FFBC00;
@@ -72,7 +72,7 @@ body::-webkit-scrollbar-thumb {
     font-weight: 400;
     color: $--color-default;
     font-size: 14px;
-    line-height: 20px;
+    line-height: 146%;
     margin-bottom: 10px;
     b {
       font-weight: 600;
@@ -87,7 +87,7 @@ body::-webkit-scrollbar-thumb {
       font-size: 14px;
       font-style: normal;
       font-weight: 400;
-      line-height: 20px;
+      line-height: 146%;
     }
   }
 }
@@ -253,7 +253,7 @@ ol {
       font-size: 13px;
       font-style: normal;
       font-weight: 400;
-      line-height: 19px;
+      line-height: 150%;
       margin-top: 16px;
     }
   }
@@ -342,7 +342,7 @@ ol {
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
-  line-height: 22px;
+  line-height: 156%;
   letter-spacing: 0.28px;
   border-radius: 8px;
   background: #6D90E2;
@@ -358,7 +358,7 @@ ol {
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
-  line-height: 22px;
+  line-height: 156%;
   letter-spacing: 0.28px;
   border-radius: 8px;
   background: rgba(221, 72, 72, 1);
@@ -456,7 +456,7 @@ ol {
       font-size: 14px;
       font-style: normal;
       font-weight: 500;
-      line-height: 22px;
+      line-height: 156%;
       letter-spacing: 0.28px;
       text-transform: uppercase;
       padding: 16px 0px 16px 25px;
@@ -483,7 +483,7 @@ ol {
         font-size: 13px;
         font-style: normal;
         font-weight: 500;
-        line-height: 19px;
+        line-height: 146%;
         letter-spacing: 0.26px;
         text-transform: uppercase;
         cursor: pointer;
@@ -582,7 +582,7 @@ ol {
       font-size: 14px;
       font-style: normal;
       font-weight: 700;
-      line-height: 20px;
+      line-height: 146%;
       margin: 25px 0 10px;
     }
   }
@@ -769,7 +769,7 @@ ol {
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
-    line-height: 25px;
+    line-height: 156%;
     letter-spacing: 0.32px;
     text-transform: uppercase;
     max-width: 70%;
@@ -1208,7 +1208,6 @@ ol {
 
   .custom-event-card .custom-event-title {
     font-size: 14px;
-    line-height: 22px;
   }
 
   .content-wrapper-header {
@@ -1231,11 +1230,11 @@ ol {
     }
     p {
       font-size: 13px;
-      line-height: 19px;
+      line-height: 146%;
     }
     ul li {
       font-size: 13px;
-      line-height: 19px;
+      line-height: 146%;
     }
     a {
       color: #FD4044;
