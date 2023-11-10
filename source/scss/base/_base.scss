@@ -274,9 +274,8 @@ ol {
   height: 100%;
 
   .cp-address {
-    padding-top: 5px;
     &:before {
-      margin-top: -5px;
+      margin-top: -2px;
     }
   }
 
@@ -727,7 +726,7 @@ ol {
     opacity: 0;
     visibility: hidden;
     overflow: initial;
-    border-radius: 30px;
+    border-radius: 20px;
   }
 
   &:hover {

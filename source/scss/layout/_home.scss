@@ -164,6 +164,11 @@
         .achievement-slide-title {
           padding: 0 22px;
           margin-bottom: 2px;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 22px;
+          text-transform: uppercase;
         }
         .achievement-slide-description {
           padding: 0 22px;
@@ -217,7 +222,7 @@
       width: 100%;
       height: 177px;
       object-fit: cover;
-      border-radius: 10px;
+      border-radius: 15px;
     }
   }
 }
@@ -352,8 +357,14 @@
 
       }
       .achievements-content {
+        margin-bottom: 30px;
         .h3 {
-          font-size: 46px;
+          font-size: 38px;
+          margin-bottom: 7px;
+          line-height: 42px;
+        }
+        .achievements-slider .achievement-slide-content .achievement-slide-title {
+          letter-spacing: 0.28px;
         }
         .achievements-description {
           p {
@@ -366,6 +377,7 @@
   }
 
   .reminder-section {
+    margin-bottom: 60px;
     .h3 {
       margin-bottom: 30px;
     }
@@ -380,5 +392,7 @@
       margin-top: 12px;
     }
   }
+
+
 
 }
