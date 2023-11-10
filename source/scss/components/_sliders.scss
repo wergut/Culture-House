@@ -192,18 +192,6 @@
   }
   .affairs-slider {
     overflow: initial;
-
-    &:before {
-      content: "";
-      display: block;
-      width: 1000px;
-      height: 600px;
-      background-color: $--color-white;
-      position: absolute;
-      left: -1000px;
-      top: -1px;
-      z-index: 2;
-    }
   }
   .events-slider {
     overflow: initial;
