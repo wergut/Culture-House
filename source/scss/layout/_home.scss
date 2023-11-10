@@ -223,21 +223,8 @@
       width: 100%;
       height: 177px;
       object-fit: cover;
-      border-radius: 15px;
+      border-radius: 8px;
     }
-  }
-}
-
-@media (min-width: 601px) and (max-width: 1024px) {
-  .achievements-section .achievements-section-wrapper .swiper-pagination {
-    padding-left: 0;
-    left: 43%;
-  }
-  .achievements-section .achievements-section-wrapper .swiper-button-prev {
-    left: calc(31% - 30px);
-  }
-  .achievements-section .achievements-section-wrapper .swiper-button-next {
-    right: calc(31% - 30px);
   }
 }
 
@@ -302,6 +289,19 @@
         }
       }
     }
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  .achievements-section .achievements-section-wrapper .swiper-pagination {
+    padding-left: 0;
+    left: 43%;
+  }
+  .achievements-section .achievements-section-wrapper .swiper-button-prev {
+    left: calc(31% - 30px);
+  }
+  .achievements-section .achievements-section-wrapper .swiper-button-next {
+    right: calc(31% - 30px);
   }
 }
 
