@@ -1076,7 +1076,7 @@ ol {
       }
     }
     .event-card-column-full {
-      margin-top: 35px;
+      margin-top: auto;
 
       .tags {
         .tag {
@@ -1090,6 +1090,7 @@ ol {
     }
     .event-card-column:nth-of-type(1) {
       width: 100%;
+      margin-bottom: 35px;
     }
     .event-card-column:nth-of-type(2) {
       width: 100%;
@@ -1245,14 +1246,28 @@ ol {
   }
   .content-block-wrapper .h3 {
     margin-bottom: 15px;
+    font-size: 30px;
   }
   .custom-widget-wrapper .widget-socials {
     right: 96px;
   }
   .bvi-shortcode {
     right: 19px;
+    bottom: 105px;
+  }
+  .datepicker-input {
+    font-size: 14px;
   }
   .custom-widget-wrapper .widget-btn {
     right: 10px;
+    bottom: 20px;
+  }
+  .wrapper-calendar {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .event-card {
+    flex-direction: column;
+    justify-content: space-between;
   }
 }
