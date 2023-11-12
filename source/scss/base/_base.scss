@@ -761,7 +761,7 @@ ol {
     top: 0;
     left: 0;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgb(0 0 0 / 44%) 100%);
-    border-radius: 30px;
+    border-radius: 20px;
   }
 
   .custom-event-title {
@@ -1269,5 +1269,8 @@ ol {
   .event-card {
     flex-direction: column;
     justify-content: space-between;
+  }
+  .custom-event-card:after {
+    border-radius: 20px;
   }
 }

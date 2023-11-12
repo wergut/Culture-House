@@ -1,28 +1,37 @@
 .direction-content-wrapper {
   background-color: #CAACE5;
-  background-image: url(../img/direction-page-img.png);
   height: 348px;
+  background-position: 100% 100%;
+}
+
+.direction-content-wrapper-muzykalnoe {
+  background-image: url(../img/direction-page-img.png);
   background-position: 100% 310%;
 }
 
 .direction-content-wrapper-dekorativno-prikladnoe {
-  background-image: url(../img/back-direction2.png);
+  background-image: url(../img/back-direction4.png);
+  background-position: 85% 100%;
 }
 
 .direction-content-wrapper-teatralnoe {
-  background-image: url(../img/back-direction3.png);
+  background-image: url(../img/back-direction5.png);
+  background-position: 85% 100%;
 }
 
 .direction-content-wrapper-horeoagraficheskoe {
-  background-image: url(../img/back-direction4.png);
+  background-image: url(../img/back-direction2.png);
+  background-position: 85% 100%;
 }
 
 .direction-content-wrapper-hudozhestvennoe {
-  background-image: url(../img/back-direction5.png);
+  background-image: url(../img/back-direction3.png);
+  background-position: 80% 100%;
 }
 
 .direction-content-wrapper-shahmaty {
   background-image: url(../img/back-direction6.png);
+  background-position: 85% 100%;
 }
 
 .direction-affairs-section {
@@ -42,10 +51,15 @@
 }
 
 @media (max-width: 1024px) {
-  .direction-content-wrapper {
+    .direction-content-wrapper {
     height: 580px;
     background-position: 50% 100%;
   }
+
+  .direction-content-wrapper-horeoagraficheskoe {
+    background-position: 50% 90%;
+  }
+
   .direction-affairs-section .filters-wrapper {
     justify-content: flex-end;
     margin-bottom: 50px;
@@ -53,6 +67,7 @@
   .direction-affairs-section .row .col-lg-4 {
     margin-bottom: 40px;
   }
+
 }
 
 @media (max-width: 600px) {
@@ -65,6 +80,15 @@
       padding-top: 120px;
     }
   }
+
+  .direction-content-wrapper-horeoagraficheskoe {
+    background-size: 175px;
+  }
+
+  .direction-content-wrapper-hudozhestvennoe {
+    background-size: 235px;
+  }
+
   .direction-affairs-section .filters-wrapper {
     margin-bottom: 30px;
   }
