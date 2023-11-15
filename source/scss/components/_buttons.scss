@@ -22,12 +22,15 @@
 
 .btn-link-circ {
   position: absolute;
+  z-index: 1;
+  display: block;
   width: 54px;
   height: 54px;
-  right: 20px;
-  top: 20px;
   background-repeat: no-repeat;
   background-position: center;
+  background-size: contain;
+  right: 20px;
+  top: 20px;
   background-image: url(../img/icons/link-circ-w-arrow.svg);
 }
 

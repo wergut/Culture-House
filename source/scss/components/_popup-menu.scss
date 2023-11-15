@@ -86,11 +86,11 @@
 
         ul {
           transition: 0.3s;
+          width: 100%;
           visibility: hidden;
           max-height: 0;
           opacity: 0;
           overflow: hidden;
-          width: 100%;
 
           li {
 
@@ -114,19 +114,32 @@
           }
         }
 
-        &:hover {
-
-          > a:first-of-type {
-            &:after {
-              transform: rotate(0deg);
-            }
-          }
-
-          ul {
+        @media (max-width: 1024px) {
+          ul.show {
             visibility: visible;
             max-height: initial;
             opacity: 1;
             padding: 12px 0 22px;
+
+
+          }
+        }
+
+        @media (min-width: 1025px) {
+          &:hover {
+
+            > a:first-of-type {
+              &:after {
+                transform: rotate(0deg);
+              }
+            }
+
+            ul {
+              visibility: visible;
+              max-height: initial;
+              opacity: 1;
+              padding: 12px 0 22px;
+            }
           }
         }
       }
@@ -245,7 +258,7 @@
             background-repeat: no-repeat;
             background-position: center;
             background-size: contain;
-            background-image: url(../img/icons/clock-ico.svg);
+            background-image: url(../img/icons/time-ico-up1.png);
             margin-right: 8px;
           }
         }
@@ -301,6 +314,9 @@
         }
       }
     }
+  }
+  .popup-menu-wrapper .popup-menu-inner ul .menu-item-has-children:has(ul.show) > a:first-of-type:after {
+    transform: rotate(0);
   }
 }
 

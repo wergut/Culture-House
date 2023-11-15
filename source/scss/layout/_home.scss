@@ -99,6 +99,16 @@
   position: relative;
   overflow: hidden;
 
+  .swiper-pagination-fraction span {
+
+    &:nth-child(1) {
+      margin-right: 10px;
+    }
+    &:nth-child(2) {
+      margin-left: 10px;
+    }
+  }
+
   .achievements-section-wrapper {
     position: relative;
     max-width: 100%;
@@ -238,7 +248,7 @@
       .slide-content-wrapper {
 
         &:before {
-          margin: 0 auto 25px;
+          margin: 0 auto 20px;
           background-image: url(../img/year-ico-tablet.svg);
           width: 237px;
         }
